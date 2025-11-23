@@ -164,6 +164,12 @@ And visualising the data based on it's decomposition builds and understanding of
 # EWMA Exponentially Weighted Moving Average
 * EWMA is an improvement on the simple moving average
 * Removes the lag effect of a simple moving average and applies more weight to the more recent values
+* Spam - N-day EW moving average
+* Center of Mass can be thought of in terms of Span: c = (s-1)/2
+* Half Life - peroid of time for the EW to reduce to half
+* Alpha - specifies teh smoothing factor directly
+
+
 
 
 
