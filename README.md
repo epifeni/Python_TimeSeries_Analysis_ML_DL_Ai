@@ -154,12 +154,12 @@ dt = datetime.strptime('24/03/21 15:48', '%d/%m/%y %H:%M')
 ```
 
 # ETS Time Series Decomposition
-Method for breaks down the into components: <b>
-Error - what's not explained by the trend or seasonality <b>
-Trend - <b>
-Seasonality - <b>
-<b>
-And visualising the data based on it's decomposition builds and understanding of its behaviour<b>
+Method for breaks down the into components: <br/>
+Error - what's not explained by the trend or seasonality <br/>
+Trend - <br/>
+Seasonality - <br/>
+<<br/>
+And visualising the data based on it's decomposition builds and understanding of its behaviour<br/>
 
 # EWMA Exponentially Weighted Moving Average
 * EWMA is an improvement on the simple moving average
@@ -170,23 +170,23 @@ And visualising the data based on it's decomposition builds and understanding of
 * Alpha - specifies teh smoothing factor directly
 
 # ARIMA
-Using either Auto Regressive OR Moving Average<b>
-AR - p - Use when autocorrelation plot shows positive acutocorrelation at the first lag (lag-1)<b>
-I <b>
-MA - q - Use when autocorrelation plot shows negative acutocorrelation at the 1st lag<b>
+Using either Auto Regressive OR Moving Average<br/>
+AR - p - Use when autocorrelation plot shows positive acutocorrelation at the first lag (lag-1)<br/>
+I <br/>
+MA - q - Use when autocorrelation plot shows negative acutocorrelation at the 1st lag<br/>
 
-p: The number of lag observations included in the model<b>
-d: The number of times that the raw observations are differenced<b>
-q: The size of the moving average window, also called the order of miving averages<b>
+p: The number of lag observations included in the model<br/>
+d: The number of times that the raw observations are differenced<br/>
+q: The size of the moving average window, also called the order of miving averages<br/>
 
 
 ## Partial Autocorrelation
-The correlation between two variables under the assumption that we know and take into account the values of some other set of variables<b>
-* A sharp drop after lag "k" suggests an AR-k model should be used<b>
-* If there is a gradual declien, it suggests an MA model should be used<b>
+The correlation between two variables under the assumption that we know and take into account the values of some other set of variables<br/>
+* A sharp drop after lag "k" suggests an AR-k model should be used<br/>
+* If there is a gradual declien, it suggests an MA model should be used<br/>
 
-Identification of an AR model is often best done with the PACF<b>
-Identification of an MA model is often best done with the ACF rather than a PACF<b>
+Identification of an AR model is often best done with the PACF<br/>
+Identification of an MA model is often best done with the ACF rather than a PACF<br/>
 
 # Holt-Winters
 3 smoothing equations
@@ -194,8 +194,8 @@ Identification of an MA model is often best done with the ACF rather than a PACF
 * trend - b_t - smoothing parameter: beta
 * seasonality - s_t - - smoothing parameter: gamma
 
-Additive method - seasonality variations are roughly constant throughout teh series<b>
-Multiplicative method - when seasonal vartiaitons change in proportion to the level of the series<b>
+Additive method - seasonality variations are roughly constant throughout teh series<br/>
+Multiplicative method - when seasonal vartiaitons change in proportion to the level of the series<br/>
 
 3 Types
 * Single exponential smoothing
