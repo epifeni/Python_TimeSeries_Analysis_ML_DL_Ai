@@ -153,6 +153,56 @@ from datetime import datetime
 dt = datetime.strptime('24/03/21 15:48', '%d/%m/%y %H:%M')
 ```
 
+# ETS Time Series Decomposition
+Method for breaks down the into components: <br/>
+Error - what's not explained by the trend or seasonality <br/>
+Trend - <br/>
+Seasonality - <br/>
+<<br/>
+And visualising the data based on it's decomposition builds and understanding of its behaviour<br/>
+
+# EWMA Exponentially Weighted Moving Average
+* EWMA is an improvement on the simple moving average
+* Removes the lag effect of a simple moving average and applies more weight to the more recent values
+* Spam - N-day EW moving average
+* Center of Mass can be thought of in terms of Span: c = (s-1)/2
+* Half Life - peroid of time for the EW to reduce to half
+* Alpha - specifies teh smoothing factor directly
+
+# ARIMA
+Using either Auto Regressive OR Moving Average<br/>
+AR - p - Use when autocorrelation plot shows positive acutocorrelation at the first lag (lag-1)<br/>
+I <br/>
+MA - q - Use when autocorrelation plot shows negative acutocorrelation at the 1st lag<br/>
+
+p: The number of lag observations included in the model<br/>
+d: The number of times that the raw observations are differenced<br/>
+q: The size of the moving average window, also called the order of miving averages<br/>
+
+
+## Partial Autocorrelation
+The correlation between two variables under the assumption that we know and take into account the values of some other set of variables<br/>
+* A sharp drop after lag "k" suggests an AR-k model should be used<br/>
+* If there is a gradual declien, it suggests an MA model should be used<br/>
+
+Identification of an AR model is often best done with the PACF<br/>
+Identification of an MA model is often best done with the ACF rather than a PACF<br/>
+
+# Holt-Winters
+3 smoothing equations
+* level - l_t - smoothing parameter: alpha
+* trend - b_t - smoothing parameter: beta
+* seasonality - s_t - - smoothing parameter: gamma
+
+Additive method - seasonality variations are roughly constant throughout teh series<br/>
+Multiplicative method - when seasonal vartiaitons change in proportion to the level of the series<br/>
+
+3 Types
+* Single exponential smoothing
+* Double exponential smoothing - adds beta as a smoothing factor for the trend component
+* Thriple exponential smoothing - adds a smoothing factor gamma addresses the changes due to seasonality
+* L - number of divisions per cycle (i.e. 3 components: Level, Trend and Seasonal)
+
 
 
 
